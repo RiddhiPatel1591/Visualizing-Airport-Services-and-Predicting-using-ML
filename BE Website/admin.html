@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>AiroSpace</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+ 
+<body>
+    <header>
+        <div class="wrapper">
+        <h1>AiroSpace<span class="color">.</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#opening">Home</a></li>
+                <li><a href="#second">Delay Prediction</a></li>
+                <li><a href="#third">Contact Us</a></li>
+                <li><a href="Passenger.html">Log out</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
+    <div id="hero-image">
+        <div class="wrapper">
+            <h2><strong>Where Dreams Takes Flight</strong><br/>
+            </h2>
+                       <a href="#third" class="button-1">Find out more</a>
+        </div>
+    </div>
+
+    <div id="primary-content">
+        <div id="opening" class="wrapper">
+            <article>
+                <h3>Welcome To AiroSpace</h3>
+                <p style="font-size: 19px; font-family: Georgia, 'Times New Roman', Times, serif;"> Airoscpace is a platform created for the passengers to track their flight arrival time more accurately. Air craft time can be easily tracked hence there will be minimum delay occuring at the time of boarding. This can make sure that everyone has a happy and less time consuming journey for their flight.<br> Have a great flight! </p>
+                <div id="features">
+                    <ul >
+                        <div class="wrapper">
+                            <ul>
+                                <li class="feature-1">
+                                    <h4>Easy to Mark Time</h4>
+                                    <p></p>
+                                </li>
+                                <li class="feature-2">
+                                    <h4>Transparency </h4>
+                                    <p></p>
+                                </li>
+                                <li class="feature-3">
+                                    <h4>Ready to Go</h4>
+                                    <p></p>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                
+                <!--a href="#"><img src="images/delay.jfif" alt="video placeholder" height="400" width="600" style="margin-left: 350px;" /></a-->
+            </article>
+        </div>
+    </div>
+    
+    <div id="service">
+        <ul >
+            <div class="wrapper">
+                <h3 style="font-size: 50px;margin-top: -1cm;">Airport Services</h3>
+                <ul>
+                    <li class="service-1">
+                        <h5><a href="final parking.html">Velvet Parking</a></h5>
+                        <p></p>
+                    </li>
+                    <li class="service-2">
+                        <h5>Playzone</h5>
+                        <p></p>
+                    </li>
+                    <li class="service-3">
+                        <h5>Information Desk</h5>
+                        <p></p>
+                    </li>
+                    <li class="service-4">
+                        <h5>Medical Centre</h5>
+                        <p></p>
+                    </li>
+                    <li class="service-5">
+                        <h5>Smoking Zone</h5>
+                        <p></p>
+                    </li>
+                    <li class="service-6">
+                        <h5>Postal Services</h5>
+                        <p></p>
+                    </li>
+                    <li class="service-7">
+                        <h5>Wireless Network</h5>
+                        <p></p>
+                    </li>
+                    <li class="service-8">
+                        <h5>Bank And ATM</h5>
+                        <p></p>
+                    </li>
+
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </ul>
+    </div>
+    
+    <div id="secondary-content">
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 35px; margin-left: 550px;margin-bottom: 1cm;" id="second">Flight Delay Prediction</h1>
+        <div class="login" >    
+            <form id="login" method="get" action="login.php">
+                <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 20px; margin-left: 0cm;margin-top: -1cm;">Enter Following Details:</h1>
+                <!-- Main Input For Receiving Query to our ML -->
+                <form action="{{ url_for('predict')}}"method="post">
+    	            <input type="text" name="departure_date_time" id="Depart" placeholder="departure_date_time" required="required" />
+                    <input type="text" name="origin" id= "Origin" placeholder="Origin" required="required" />
+		            <input type="text" name="destination" id="Desti" placeholder="Destination" required="required" />
+
+                    <button type="submit" id="Predict" class="btn btn-primary btn-block btn-large">Predict</button>
+                </form>
+
+                <br>
+                <br>
+                {{ prediction_text }}
+    
+        </div>    
+    </div>
+    
+    <div id="cta">
+        <div id="third" class="wrapper">
+            <h3 style="margin-top: 3cm;margin-bottom: 1cm; font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</h3>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                    <img src="images/icon-mail.svg" alt="Jane" style=" width: 3cm; height: 3cm; margin-left: 2.5cm;">
+                    <div class="container">
+                      <h2 style="font-size: 15px; font-family: Georgia, 'Times New Roman', Times, serif;">For feedbacks & suggestions mail us at
+
+                        feedback@csia.gvk.com</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                      <img src="images/icon-call.svg" alt="Mike" style="width:3cm; height: 3cm; margin-left: 2.5cm;">
+                      <div class="container">
+                        <h2 style="font-size: 15px;font-family: Georgia, 'Times New Roman', Times, serif;">GVK CSMIA 24x7 Helpline Number
+
+                            022 66851010</h2>
+                      </div>
+                    </div>
+                  </div>
+        
+    </div>
+    
+    <footer>
+        <div class="wrapper">
+            <div id="footer-info">
+                <p>Copyright 2014 CompanyName. All rights reserved.</p>
+                <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+            </div>
+            <div id="footer-links">
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                <ul>
+                    <li><h5>Company</h5></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+</body>
+</html>

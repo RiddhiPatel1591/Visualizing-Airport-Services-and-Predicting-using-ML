@@ -1,0 +1,341 @@
+body {
+    background-color: #fff;
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin-left: -6cm;
+}
+h2 {
+    font-weight: 300;
+    color: #444;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+h5 {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #02b8dd;
+}
+strong {
+    font-weight: bold;
+}
+small {
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+}
+.clear {
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+
+header {
+    height: 100px;
+}
+header h1 {
+    float: left;
+    margin-top: 25px;
+}
+header h1 .color {
+    color: #02b8dd;
+}
+header nav {
+    float: right;
+    margin-right: -200px;
+}
+header nav ul li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 0px;
+}
+header nav ul li a {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-right: 30px;
+}
+
+#hero-image {
+    height: 580px;
+    padding-top: 1px;
+    background: #e8eced url('../images/first.jfif') no-repeat center;
+}
+#hero-image h2 {
+    margin: 180px 0 40px 0;
+    color: white;
+}
+
+.button-1 {
+    display: block;
+    text-align: center;
+    background: rgb(240, 239, 239);
+    border-radius: 3px;
+    color: rgb(17, 17, 17);
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.button-1:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+#features ul {
+    margin: 75px 0;
+}
+#features ul li {
+    width: 290px;
+    padding-top: 110px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: -2cm;
+}
+#features ul li.feature-1 {
+    background: url('../images/features-icon-1.png') no-repeat top center;
+}
+#features ul li.feature-2 {
+    background: url('../images/features-icon-2.png') no-repeat top center;
+}
+#features ul li.feature-3 {
+    background: url('../images/features-icon-3.png') no-repeat top center;
+}
+
+#service ul {
+    margin: 75px 0;
+}
+#service ul li {
+    width: 200px;
+    padding-block: 110px;
+    padding-top: 110px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    margin-bottom: -2cm;
+}
+#service ul li.service-1 {
+    background: url('../images/valet_parking_facility.png') no-repeat top center;
+}
+#service ul li.service-2 {
+    background: url('../images/playzone.png') no-repeat top center;
+}
+#service ul li.service-3 {
+    background: url('../images/information_desk.png') no-repeat top center;
+}
+#service ul li.service-4 {
+    background: url('../images/medical_centre.png') no-repeat top center;
+}
+#service ul li.service-5 {
+    background: url('../images/smoking_zones.png') no-repeat top center;
+}
+#service ul li.service-6 {
+    background: url('../images/postal_services.png') no-repeat top center;
+}
+#service ul li.service-7 {
+    background: url('../images/wifi.png') no-repeat top center;
+}
+#service ul li.service-8 {
+    background: url('../images/banks_and_atms.png') no-repeat top center;
+}
+
+
+
+#primary-content {
+    background-color: #f8fafa;
+    padding: 60px 0;
+    text-align: center;
+}
+#primary-content h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 600px;
+    border-bottom: 1px solid #02b8dd;
+    padding: 0 0 20px 0;
+    font-size: 50px;
+}
+#primary-content a img {
+    margin: 20px 0;
+    
+}
+
+.login{  
+    width: 350px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    background: #AEC6CF;  
+    border-radius: 5px ;  
+    color: white;
+    box-shadow: 4px 4px 4px #273B42;
+      
+}  
+label{  
+    color: #273B42;  
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 3px;
+    margin-bottom: 3px;  
+
+}  
+#Depart{  
+    width: 300px;  
+    height: 30px;  
+    border:none; 
+    border-radius: 3px;  
+    padding-left: 8px;  
+    margin-top: 10px;
+}  
+#Origin{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+    margin-top: 10px; 
+      
+}  
+#Desti{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+    margin-top: 10px; 
+}
+#Predict{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+    margin-top: 10px; 
+}
+article h4 {
+    border-bottom: 1px solid #02b8dd;
+    padding-bottom: 20px;
+}
+.more-link {
+    border: 1px solid #02b8dd;
+    color: #02b8dd;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.more-link:hover {
+    background-color: #02b8dd;
+    color: #fff;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    margin-left: 80px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+footer {
+    padding: 60px 0;
+    background-color: #f8fafa;
+}
+#footer-info {
+    width: 380px;
+    float: left;
+    margin-top: 10px;
+}
+#footer-links {
+    width: 800px;
+    float: right;
+    font-size: 18px;
+}
+#footer-links ul {
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+}
+#footer-links ul li {
+    margin: 10px 0;
+}
+
+
