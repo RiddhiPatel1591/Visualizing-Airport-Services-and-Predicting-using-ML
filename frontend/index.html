@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        function startTime() {
+          var today = new Date();
+          var h = today.getHours();
+          var m = today.getMinutes();
+          var s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =
+          h + ":" + m + ":" + s;
+          var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+        </script>
+    <head>
+        <meta charset="UTF-8">
+        <title>AIROSPACE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styleindex.css">
+        <script src="js/login.js"></script>
+
+    </head>
+    <body>
+
+    
+        <div class="wrapper">
+            <div><p></p></div>
+            <div><h3><center>Autority Login</center></h3></div>
+            <form id="form_id" method="post" name="myform">
+            <input type="email" placeholder="Your Email Address" name="emailid" id="emailid">
+            <input type="password" placeholder="Your Password" name="pwd" id="pwd">
+            <input class="button1" type="button" value="Login" id="submit" onclick="validate()"/>
+            </form>
+        </div>
+        <div class="footer">
+            <p><h3>MUMBAI</h3></p>
+            <p><body onload="startTime()">
+
+                <div id="txt"></div></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: poppins;
+    font-size: 16px;
+    color: #fff;
+}
+
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+}
+
+.wrapper::before{
+    /*change path*/
+    background-image: url('/Users/ravisharma/Downloads/AiroSpace/images/photographer.jpg');
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    display: block;
+    filter: blur(6px);
+}
+
+.xyz{
+    font-family: 'Create Round',serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+.header-text{
+    font-family: 'Create Round',serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+.wrapper input{
+    margin: 10px 0;
+    border: none;
+    padding:  10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+.wrapper input[type=checkbox]{
+    display: none;
+}
+
+.wrapper label{
+    position: relative;
+    margin-left: 5px;
+    margin-right: 10px;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.wrapper label:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ddd;
+}
+
+.wrapper input[type=checkbox]:checked +label:before{
+    content: '\2713';
+    font-size: 20px;
+    color:#262626;
+    text-align: center;
+    line-height: 20px;
+}
+
+.wrapper span{
+    font-size: 14px;
+
+}
+
+.wrapper button{
+    background-color: #4a47a3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin:20px 0;
+}
+
+span a{
+    color: #ddd;
+
+}
+
+
+.footer {
+    text-align: right ;
+    padding: 3px;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+
+ 
+
+  .button1 {
+      background-color: #046582;
+      color:white;
+    }
